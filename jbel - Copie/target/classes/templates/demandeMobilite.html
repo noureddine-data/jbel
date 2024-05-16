@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande Mobilite interne Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+
+    .popup {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+      width: 300px;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .popup label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .popup input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .popup button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff; /* Blue button color */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+<div class="popup">
+  <h1>Demande Mobilite interne Form</h1>
+
+  <form action="/demandemobilite/auth/save_demande_mobilite" method="post">
+
+    <label for="fullname">fullname:</label>
+    <input type="text" id="fullname" name="fullname">
+
+    <label for="codeSalarie">"codeSalarie":</label>
+    <input type="text" id="codeSalarie" name="codeSalarie">
+
+    <label for="matricule">"matricule":</label>
+    <input type="text" id="matricule" name="matricule">
+
+    <label for="dateDemandeMobilite">dateDemandeMobilite:</label>
+    <input type="date" id="dateDemandeMobilite" name="dateDemandeMobilite">
+
+    <label for="depActuel">"depActuel":</label>
+    <input type="text" id="depActuel" name="depActuel">
+
+    <label for="fonctActuel">"fonctActuel":</label>
+    <input type="text" id="fonctActuel" name="fonctActuel">
+
+    <label for="depDemande">"depDemande":</label>
+    <input type="text" id="depDemande" name="depDemande">
+
+    <label for="fonctDemande">"fonctDemande":</label>
+    <input type="text" id="fonctDemande" name="fonctDemande">
+
+
+    <label for="salairePrs">"salairePrs":</label>
+    <input type="double" id="salairePrs" name="salairePrs">
+
+    <label for="augSalaire">augSalaire:</label>
+    <input type="checkbox" id="augSalaire" name="augSalaire" value="true">
+
+    <label for="motif">motif:</label>
+    <input type="text" id="motif" name="motif">
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
